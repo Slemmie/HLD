@@ -1,15 +1,21 @@
 #include <bits/stdc++.h>
 
-int main() {
+int max_n = 100;
+
+int main(int argc, char** argv) {
 	
+	if (argc == 2) {
+		max_n = std::stoi(argv[1]);
+	}
 	std::random_device rd;
 	std::mt19937 gen(rd());
 	std::uniform_int_distribution <int> dis(0, 1 << 30);
-	int n = dis(gen) % 100 + 2;
-	int q = dis(gen) % 100 + 1;
+	std::uniform_int_distribution <int> dis_size(max_n - max_n / 10, max_n - 1);
+	int n = dis_size(gen);
+	int q = dis_size(gen);
 	std::cout << n << " " << q << "\n";
 	for (int i = 0; i < n; i++) {
-		std::cout << dis(gen) % 99 + 1 << " \n"[i + 1 == n];
+		std::cout << dis(gen) % (1 << 30) + 1 << " \n"[i + 1 == n];
 	}
 	std::vector <int> ord(n);
 	std::iota(ord.begin(), ord.end(), 0);
