@@ -8,3 +8,11 @@ Segment tree: [implementation](https://github.com/Slemmie/HLD/blob/main/segment_
 Lowest common ancestor: [implementation](https://github.com/Slemmie/HLD/blob/main/LCA.h)
 
 HLD/Segtree node examples: [implementation](https://github.com/Slemmie/HLD/blob/main/node_example.h)
+
+HLD application example: [implementation](https://github.com/Slemmie/HLD/blob/main/test.cpp)
+
+Naive application: [implementation](https://github.com/Slemmie/HLD/blob/main/naive.cpp)
+
+Random test generator: [implementation](https://github.com/Slemmie/HLD/blob/main/gen.cpp)
+
+Compare applications: [implementation](https://github.com/Slemmie/HLD/blob/main/compare.sh)
